@@ -1,0 +1,8 @@
+{
+    "require": {
+        "workerman/workerman": "^3.5",
+        "react/http-client": "^0.5.9",
+        "clue/buzz-react": "^2.6",
+        "react/http": "^0.8.4"
+    }
+}
