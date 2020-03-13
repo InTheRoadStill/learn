@@ -20,12 +20,16 @@ class snow {
 	public $time = 1288834974657;
 
 	public function __construct(){
+		if(PHP_INT_SIZE < 8){
+			die('需要64位下运行');
+		}
 		if($this->workid > 31 || $this->workid < 0 ){
 			die('workid 范围不对');
 		}
 		if($this->workid > 31 || $this->workid < 0 ){
 			die('jifang 范围不对');
 		}
+
 		// 只取五位
 		$this->workid = $this->workid & 31;
 		$this->jifang = $this->jifang & 31;
